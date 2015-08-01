@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sticky Header</title>
+</head>
+<link href="css/sticky_header_css.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/sticky_header.js"></script>
+<script>
+	$(document).ready(function(){
+		$( "#sticky_header" ).stickyheader({
+			minimum_height: "50px",
+			maximum_height: "100px",
+			speed: 500
+		});
+	});
+</script>
+<body>
+
+<header id="sticky_header">
+	<h1>Sticky Header</h1>
+</header>
+
+
+</body>
+</html>
